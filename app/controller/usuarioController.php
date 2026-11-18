@@ -19,7 +19,7 @@ class UsuarioController {
         $senha = $_POST['senha'];
 
         if(empty($email) || empty($senha)){
-            $erroLogin = "Preencha corretamente seu e-mail e senha.";
+            $erro = "Preencha corretamente seu e-mail e senha.";
             $tarefas = [];
             include __DIR__ . '/../view/listar.php';
             exit; 
